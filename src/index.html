@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <style>
+        .post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .comment {
+            background-color: #f8f8f8;
+            padding: 5px;
+            margin-top: 5px;
+            border-left: 3px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Add User:</h3>
+    <form id="user-form">
+        <label for="add-user-id">User ID:</label>
+        <input type="text" id="add-user-id" name="userId" required>
+
+        <label for="add-user-nicknam">User nickname:</label>
+        <input type="text" id="add-user-nickname" name="nickname" required></textarea>
+
+        <button type="button" onclick="submitUser()">Add user</button>
+    </form>
+
+    <h3>Add Post:</h3>
+    <form id="post-form">
+        <label for="user-id">User ID:</label>
+        <input type="text" id="user-id" name="userId" required>
+
+        <label for="post-content">Post Content:</label>
+        <textarea id="post-content" name="content" required></textarea>
+
+        <button type="button" onclick="submitPost()">Submit post</button>
+    </form>
+
+    <div id="posts-container"></div>
+
+    <script src="function.js"></script>
+</body>
+</html>

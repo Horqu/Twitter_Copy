@@ -2,5 +2,7 @@
 
 ## Dependencies:
 
-- Python 3.12.0 with libraries:
-    - 
+- Node.js v21.4.0 with libraries:
+    - neo4j
+    - express
+    - cors
